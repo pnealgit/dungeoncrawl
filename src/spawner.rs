@@ -30,7 +30,8 @@ pub fn spawn_monster(
                     2 => to_cp437('o'),
                     _ => to_cp437('g'),
                 } //end of glyph
-            } //end of render
+            }, //end of render
+            MovingRandomly{}
         ) //end of push group
        );  //end of push
 }

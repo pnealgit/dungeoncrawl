@@ -7,6 +7,7 @@ mod collisions;
 mod random_move;
 mod end_turn;
 mod movement;
+mod hud;
 
 pub fn build_input_scheduler() -> Schedule {
     Schedule::builder()

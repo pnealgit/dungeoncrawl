@@ -15,9 +15,6 @@ pub fn collisions(
         .filter(component::<Player>());
     players.iter(ecs).for_each(|pos| player_pos = *pos);
 
-    let mut players = <&Point>::query()
-        .filter(component::<Enemy>());
-
     let mut enemies = <(Entity, &Point)>::query()
         .filter(component::<Enemy>());
     enemies
